@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Signika', sans-serif;
+           box-sizing:border-box;
+    
+        }
+        @media screen and (max-width: 100px) 
+        { 
+              .logbox
+               {
+                 width: 80%; 
+                 margin:0px 0px 0px 20%;
+                 /* The width is 100%, when the viewport is 800px or smaller */
+               }
+        }
+        body{
+            margin: 10px 10px 10px 10px;
+            
+            background-color: rgb(219, 219, 219);
+            }
+        .logbox{
+            font-size: smaller;
+            border-radius: 40px;
+            border-style: solid;
+            box-shadow: 10px 10px 150px #001d2a ;
+            background-color: #013C58;
+            color: rgb(219, 219, 219);
+            width:80%;
+            margin:0px 10% 0px 10%;
+           font-weight: 100;
+            margin-top: 3%;
+            margin-bottom: 4%;
+             justify-items: center;
+             display: inline-block;
+        }
+        .heading{
+        
+            margin:20px 20px 10px 20px;
+        }
+        input{
+            width:100%;
+        }
+        .inputbox{
+            width:auto;
+            padding :5px 5px 5px 5px;
+            margin: 20px 20px 20px 20px;
+        }
+        #i1,#i2{
+            border-radius: 40px;
+            font-size: medium;
+            font-weight: 900;
+            padding: 9px 22px; 
+            margin: 5% -9%;
+            border-color:  rgb(219, 219, 219);
+            border-style: solid;
+        }
+       .btn{
+         height: 1cm;
+         margin-bottom: 1cm;
+        }
+        button{
+            height:1.5cm;
+            width:4cm;
+            border-radius: 40px;
+            border-color:  rgb(219, 219, 219);;
+            border-style: solid;
+            font-size: larger;
+            font-weight: 900;
+            background-color: #013C58;
+            color: rgb(219, 219, 219);
+            margin-bottom: 2%;
+        }
+        button:hover{
+            background-color: rgb(219, 219, 219);
+            color: #013C58;
+        }
+        a{
+            text-decoration: none;
+            color: #013C58;
+        }
+        a:after{
+            color: aliceblue;
+        }
+           
+        
+    </style>
+    <script>
+     
+        function register()
+        {
+            let a=document.getElementById("i1").value;
+            let b=document.getElementById("i2").value;
+
+           
+            if(a=="Chetan"&&b==123456)
+            {
+                window.open('home.html', '_self');
+            }
+            else
+            {
+                alert("wrong user name and password");
+            }
+      }
+    </script>
+</head>
+<body>
+    <form>
+   <div class="logbox">
+    <div class="heading">
+        <center>
+        <H1>Create a New Account Here</H1>
+    </center>
+    </div>
+        <div class="inputbox">
+
+          <p>USER-NAME:</p>
+          <center>
+          <input type="text" placeholder="@abcd" id="i1" required>
+        </center>
+          <p>EMAIL ID:</p>
+        <center>
+          <input type="email" placeholder="password" id="i2">
+        </center>
+        <p>PHONE NO:</p>
+        <center>
+        <input type="number" placeholder="@abcd" id="i1" required>
+    </center>
+        <p>PASSWORD:</p>
+
+        <center>
+        <input type="password" placeholder="@abcd" id="i1" required>
+      </center>
+      <p>CONFIRM PASSWORD:</p>
+
+        <center>
+        <input type="password" placeholder="@abcd" id="i1" required>
+      </center>
+    
+      <p>DATE OF BIRTH:</p>
+
+      <center>
+      <input type="date" placeholder="@abcd" id="i1">
+    </center>
+    <p>GENDER:</p>
+
+   
+      <P><input type="RADIO" placeholder="@abcd" id="i1" name="gender">MALE
+    <input type="RADIO" placeholder="@abcd" id="i1" name="gender">FEMALE
+    
+        
+        
+
+        </div>
+        
+    
+   </div>
+  
+   <center>
+    <button type="submit" onclick="register();">Create Account</button>
+</center>
+
+       
+    </form>
+
+   
+
+   <center>
+        <p><a href="login.html">Already have an account? login here</a></p>
+
+
+</center>
+
+
+
+
+</body>
+</html>

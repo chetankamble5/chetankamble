@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Signika', sans-serif;
+           box-sizing:border-box;
+    
+        }
+        
+        body{
+         
+            background-image:url("https://www.agmrcet.ac.in/img/slider/6.png") ;
+            background: linear-gradient(to top,#000000e0,#0f719ea0,#000000ea);
+            background-size: cover;
+            background-repeat:no-repeat;
+            background-size: 100%;
+            margin: 10px 10px 10px 10px;
+            height:;
+            background-color: rgb(219, 219, 219);
+            }
+        .logbox{
+            font-size: smaller;
+            border-radius: 20px;
+            border-style: solid;
+            box-shadow: 10px 10px 150px #001d2a ;
+            background-color: #001924d8;
+            color: rgb(219, 219, 219);
+            width:25%;
+            margin:0px 37.5% 0px 37.5%;
+           font-weight: 100;
+            margin-top: 10%;
+            margin-bottom: 4%;
+             justify-items: center;
+             display: inline-block;
+        }
+        .heading{
+            margin-top: 18px;
+        }
+        input{
+            width:100%;
+        }
+        .inputbox{
+            width:auto;
+            padding :5px 5px 5px 5px;
+            margin: 20px 20px 20px 20px;
+        }
+        #i1,#i2{
+            border-radius: 20px;
+            font-size: medium;
+            font-weight: 900;
+            padding: 9px 22px; 
+            margin: 5% -9%;
+            border-color:  rgb(219, 219, 219);
+            border-style: solid;
+        }
+       .btn{
+         height: 1cm;
+         margin-bottom: 1cm;
+        }
+        button{
+            height:1.5cm;
+            width:4cm;
+            border-radius: 40px;
+            border-color:  rgb(219, 219, 219);;
+            border-style: solid;
+            font-size: larger;
+            font-weight: 900;
+            background-color: #00192484;
+            color: rgb(219, 219, 219);
+            margin-bottom: 2%;
+        }
+        button:hover{
+            background-color: rgb(219, 219, 219);
+            color: #013C58;
+        }
+        a{
+            text-decoration: none;
+            color: #013C58;
+        }
+        a:after{
+            color: aliceblue;
+        }
+        
+        @media only screen and (max-width: 600px) 
+        {
+            .logbox
+             {
+          
+            width:60%;
+            height: 40%;
+            margin:0px 20% 0px 20%;
+        
+            margin-top: 25%;
+            margin-bottom: 25%;
+            
+        }
+    }
+        @media only screen and (min-width: 768px) {
+            {
+            .logbox
+             {
+          
+            width:80%;
+            height: 40%;
+            margin:0px 10% 0px 10%;
+        
+            margin-top: 25%;
+            margin-bottom: 25%;
+        }
+
+        }
+       
+       
+        
+      
+    </style>
+    <script>
+     
+        function login()
+        {
+            let a=document.getElementById("i1").value;
+            let b=document.getElementById("i2").value;
+
+           
+            if(a=="Chetan"&&b==123456)
+            {
+                document.write("<h1><br<br><br><br><br><br><br><br><br><center>login Succussfull<center><h1>")
+            }
+            else
+            {
+                alert("wrong user name and password");
+            }
+      }
+    </script>
+</head>
+<body>
+    <br>
+    <center>
+    <h1 style="color: aliceblue;">AGMR CYBER CENTER</h1>
+    </center>
+    <form>
+        
+   <div class="logbox">
+    <div class="heading">
+        <center>
+        <H1>LOGIN</H1>
+    </center>
+    </div>
+        <div class="inputbox">
+
+          <p>USER-NAME:</p>
+          <center>
+          <input type="text" placeholder="@abcd" id="i1">
+        </center>
+          <p>PASSWORD:</p>
+        <center>
+          <input type="password" placeholder="password" id="i2">
+        </center>
+
+        
+
+        </div>
+        
+    
+   </div>
+  
+   <center>
+    <button type="submit" onclick="login();">login</button>
+</center>
+
+       
+    </form>
+
+   
+
+   <center>
+        <p ><a href="thiswebsite.pdf" style="color:aliceblue">don't have an account? create a new account here</a></p>
+
+
+</center>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Signika', sans-serif;
+           box-sizing:border-box;
+    
+        }
+        @media screen and (max-width: 800px) 
+        { 
+              .inputbox, .heading, .logbox,.btn
+               {
+                 width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+               }
+        }
+        body{
+            background-color: rgb(219, 219, 219);
+            }
+        .logbox{
+            border-radius: 20%;
+            border-style: solid;
+            box-shadow: 10px 10px 150px #001d2a ;
+            background-color: #013C58;
+            color: rgb(219, 219, 219);
+            width:70%;
+            margin-left: 15%;
+            margin-right: 15%;
+            margin-top: 10%;
+            margin-bottom: 10%;
+             justify-items: center;
+             display: inline-block;
+        }
+        .heading{
+            margin-top: 18px;
+        }
+        input{
+            width:100%;
+        }
+        .inputbox{
+            padding-left:10px; 
+            padding-right: 50px;
+            margin: 6% 5%;
+        }
+        #i1,#i2{
+            border-radius: 15px;
+            font-size: medium;
+            font-weight: 900;
+            padding: 9px 22px; 
+            margin: 5% -9%;
+            border-color:  rgb(219, 219, 219);
+            border-style: solid;
+        }
+       .btn{
+         height: 1cm;
+         margin-bottom: 1cm;
+        }
+        button{
+            height:1.5cm;
+            width:4cm;
+            border-radius: 10px;
+
+            border-color:  rgb(219, 219, 219);;
+            border-style: solid;
+            font-size: larger;
+            font-weight: 900;
+            background-color: #013C58;
+            color: rgb(219, 219, 219);
+        }
+        button:hover{
+            background-color: rgb(219, 219, 219);
+            color: #013C58;
+        }
+           
+        
+    </style>
+    <script>
+     
+        function add(){
+            let num1 = document.getElementById("i1").value;
+        let num2 = document.getElementById("i2").value; 
+        let sum=parseInt(num1)+parseInt(num2);
+        document.write("<center><br><br><br><br><br><br><br><br><br><br><br><h1> the sum of ",num1," and ",num2," is = ",sum,"</h1></center>");
+        document.getElementById("tot").innerHTML=sum;
+        return sum;
+        }
+        function sub(){
+            let num1 = document.getElementById("i1").value;
+        let num2 = document.getElementById("i2").value; 
+        let sum=parseInt(num1)-parseInt(num2);
+        document.write("<center><br><br><br><br><br><br><br><br><br><br><br><h1> the subtraction of ",num1," and ",num2," is = ",sum,"</h1></center>")
+        document.getElementById("tot").innerHTML=sum;
+        return sum;
+        }
+
+        function mul(){
+            let num1 = document.getElementById("i1").value;
+        let num2 = document.getElementById("i2").value; 
+        let sum=parseInt(num1)*parseInt(num2);
+        document.write("<center><br><br><br><br><br><br><br><br><br><br><br><h1> the multiplication of ",num1," and ",num2," is = ",sum,"</h1></center>")
+        document.getElementById("tot").innerHTML=sum;
+        return sum;
+        }
+
+        function div(){
+            let num1 = document.getElementById("i1").value;
+        let num2 = document.getElementById("i2").value; 
+        let sum=parseInt(num1)/parseInt(num2);
+        document.write("<center><br><br><br><br><br><br><br><br><br><br><br><h1> the division of ",num1," and ",num2," is = ",sum,"</h1></center>")
+        document.getElementById("tot").innerHTML=sum;
+        return sum;
+        }
+
+      
+    </script>
+</head>
+<body>
+    <form>
+   <div class="logbox">
+    <div class="heading">
+        <center>
+        <H1>Caclculator</H1>
+    </center>
+    </div>
+        <div class="inputbox">
+
+          <p>Number 1</p>
+          <center>
+          <input type="number"  id="i1">
+        </center>
+          <p>Number 2</p>
+        <center>
+          <input type="number" id="i2">
+        </center>
+
+        
+
+        </div>
+        
+    
+   </div>
+   <center>
+
+</center>
+<center>
+        <button  type="submit" onclick="add()">+</button>
+        <button  type="submit" onclick="sub();">-</button>
+        <button  type="submit" onclick="mul();">*</button>
+        <button  type="submit" onclick="div();">/</button>
+        <!-- <input  style="width:50%" type="number" id="tot"/> -->
+    </form>
+    </center>
+   
+
+
+
+</footer>
+
+</body>
+</html>
